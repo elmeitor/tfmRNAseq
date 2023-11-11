@@ -36,9 +36,25 @@ Los datos de secuenciación sin procesar informados en este artículo se han dep
 
 Disponibilidad de código
 Los códigos utilizados en este estudio están disponibles en GitHub ( https://github.com/meta-cancer/scPLC ).
+# Descarga en local /practicasTFM/data y comprobación de integridad md5sum
+# HPC Carga en el clusterHPC CNIO dataSet y comprobación integridad 
+# HPC Creación Conda enviroment env-tfm
+# Instrucciones -> Cluster HPC, Enviroment Conda e Instalación de entorno concreto R (v.3.6.1), RStudio (v.3.5.3) and Python (v.3.7.4).
+mamba create -y -n env-tfm2  -> para instalar sw concretos del paper R
+mamba activate env-tfm2
+mamba install -c conda-forge r-base=3.6.1
+R
+seu_mouse <- readRDS("/storage/scratch01/users/nruiz/seu_mouse_LiverCancer.anno.rds")
+-> no permite alocar tamaño 2.2GB
+# HPC sesion interactiva de 8GB
+srun --men=8192 -c 2 -t 120 --pty /bin/bash
+NOTA: las sesiones interactivas te sacan del enviroment activado y hay que volver a entrar mamba activate env-tfm2
+R dentro del env-tfm2
+seu_mouse <- readRDS("/storage/scratch01/users/nruiz/seu_mouse_LiverCancer.anno.rds")
+print(seu_mouse) -> loading required package 'SeuratObject' 
 
-# Cluster HPC, Enviroment Conda e Instalación de entorno concreto.
-Conda create
-conda install
-...
-# 
+# pa import r-seurat import r-seuratobject que son de la versión 3
+
+
+
+# converted the scanpy object to Seurat object using the anadata Python package (v.0.7.5) and then clustering using Seurat (v.3.2.3)
