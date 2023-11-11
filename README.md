@@ -37,3 +37,8 @@ Los datos de secuenciación sin procesar informados en este artículo se han dep
 Disponibilidad de código
 Los códigos utilizados en este estudio están disponibles en GitHub ( https://github.com/meta-cancer/scPLC ).
 
+# Cluster HPC, Enviroment Conda e Instalación de entorno concreto.
+Conda create
+conda install
+...
+# 
