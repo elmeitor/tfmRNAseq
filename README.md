@@ -23,3 +23,17 @@ Liver tumour immune microenvironment subtypes and neutrophil heterogeneity
 En el contexto de ambientes tumorales, se ha estudiado el papel del TREM1 en la interacción entre el sistema inmunológico y el cáncer. La investigación ha sugerido que el TREM1 puede desempeñar un papel en la regulación de la respuesta inmunitaria en el microambiente de un tumor. Algunos estudios han demostrado que la sobreexpresión de TREM1 en los neutrófilos puede estar asociada con la promoción de la inflamación crónica y la supresión de la respuesta inmunitaria antitumoral.
 Sin embargo, es importante tener en cuenta que la relación entre TREM1, los neutrófilos y los ambientes tumorales es un área de investigación activa, y se requieren más estudios para comprender completamente cómo este receptor puede influir en la respuesta inmunitaria contra el cáncer. Este estudio pretende con sus analisis de datos, procesado y visualizaciones poder reconfirmar las hipotesis de las que partimos.
 
+# Descarga desde Drive los archivos spliteados proporcionados por la Universidad de Peking. 
+https://drive.google.com/drive/folders/1mgqjO5ABV5mQxYRUbZEp4XVwCJ6BKW61 
+Readme.txt
+Download data
+seu_A124.counts_anno.rds is the single cell RNA-seq data of 160 samples of human liver cancer. 
+To avoid network interruption, we have splited seu_A124.counts_anno.rds into 10 small files. You can download them and run `cat seu_A124.counts_anno.rds.a* > seu_A124.counts_anno.rds` to generate the complete Rdata object.
+
+# Generación de ficheros seu_A124.counts_anno.rds and seu_mouseLiverCancer.anno.rds
+# Información del paper
+Los datos de secuenciación sin procesar informados en este artículo se han depositado en el Archivo de Secuencia del Genoma del Centro Nacional de Datos Genómicos (Beijing, China) con el ID de BioProyecto PRJCA007744 . Los datos depositados y hechos públicos cumplen con las regulaciones del Ministerio de Ciencia y Tecnología de China. Para facilitar el uso de nuestros datos por parte de la comunidad de investigación en general, desarrollamos una herramienta interactiva basada en web ( http://meta-cancer.cn:3838/scPLC ) para analizar y visualizar nuestros datos unicelulares. Otros datos públicos utilizados en este estudio incluyen genomas de referencia para conjuntos de datos humanos ( https://asia.ensembl.org/ , GRCh38.p13) y de ratón ( https://asia.ensembl.org/ , GRCm39) y TCGA ( https: //portal.gdc.cancer.gov/ ). Los datos originales se proporcionan con este documento.
+
+Disponibilidad de código
+Los códigos utilizados en este estudio están disponibles en GitHub ( https://github.com/meta-cancer/scPLC ).
+
